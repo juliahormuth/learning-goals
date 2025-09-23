@@ -10,6 +10,14 @@ These are my learning goals before I get married :)
 - Kubernets
 - Clean Architecture
 
+## Postgraduate
+- Arquitetura Backend
+
 ## Frontend
 
 - Deixa a vida me levar
+
+
+## English Review
+
+## German Review
