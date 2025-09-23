@@ -16,3 +16,8 @@ These are my learning goals before I get married :)
 ## Frontend
 
 - Deixa a vida me levar
+
+
+## English Review
+
+## German Review
