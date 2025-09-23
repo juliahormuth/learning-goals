@@ -10,7 +10,7 @@ These are my learning goals before I get married :)
 - Kubernets
 - Clean Architecture
 
-- ## Postgraduate
+## Postgraduate
 - Arquitetura Backend
 
 ## Frontend
