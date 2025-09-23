@@ -55,4 +55,6 @@ Dessa forma, as aplicacoes saem da Network.
 
 # Olhar detalhes da rede:
 
+Detalhes da rede como Containers conectados, se é IPV6 e etc.
+
 - `docker network inspect networkName`
