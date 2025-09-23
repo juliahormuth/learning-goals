@@ -13,7 +13,7 @@ These are my learning goals before I get married :)
 
 ## Postgraduate
 
-- Arquitetura Backend
+- Backend Architecture
 
 ## Frontend
 
