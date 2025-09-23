@@ -1,0 +1,49 @@
+name: "Julia"
+age: 25
+
+# Sempre dois espacos para "Objetos"
+object:
+  version: 2
+  file: "test.txt" # Aqui tbm funciona
+
+# Tipos de dados:
+
+version: 2
+final_version: 3.14
+
+# String com aspas ou sem aspas:
+
+string_example_1: "Example com aspas"
+string_example:2: Example sem aspas
+
+# Valores nulos:
+
+nulo: ~
+nulo_2: null
+
+# Booleanos:
+
+verdadeiro: True
+verdadeiro_2: On
+
+falso: False
+falso_2: Off
+
+# Listas:
+
+list: [1, 2, 3, 4, 5]
+
+list_2: # Pode misturar dados
+  - "test"
+  - 10
+  - outro teste
+  - True
+
+# Objeto com 3 itens e 3 valores
+
+obj: { a: 1, b: 2, c: 3 }
+
+objeto:
+  a: 1
+  b: 2
+  c: 3
