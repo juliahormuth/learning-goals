@@ -9,6 +9,7 @@ These are my learning goals before I get married :)
 - [Docker](docker/Index.md)
 - [YML](yml/test.yml)
 - Kubernets
+- Jenkins
 - Clean Architecture
 
 ## Postgraduate
