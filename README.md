@@ -8,7 +8,7 @@ These are my learning goals before I get married :)
 - Design Patterns
 - [Docker](docker/Index.md)
 - [YML](yml/test.yml)
-- Kubernets
+- [Kubernetes](kubernetes/Conceito.md)
 - Jenkins
 - Clean Architecture
 
