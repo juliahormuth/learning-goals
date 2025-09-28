@@ -18,3 +18,17 @@
 - Escalando projetos, formando um cluster.
 
 - Gerencia servicos, garantindo que as aplicacoes sejam executadas sempre da mesma forma.
+
+## Conceitos:
+
+- Control Plane: Onde é gerenciado o controle dos processos dos Nodes.
+
+- Nodes: Máquinas que sao gerenciadas pelo Control Plane.
+
+- Deployment: A execucao de uma imagem/projeto em um Pod.
+
+- Pod: Um ou mais containers que estao em um Node.
+
+- Services: Servicos que expoem os Pods ao mundo externo.
+
+- Kubectl: Cliente de linha de comando para o Kubernets.
