@@ -51,3 +51,21 @@
 ## Service
 
 - É quem possibilita expor os Pods para o mundo externo. É uma entidade separada dos pods, que os expoem para uma rede.
+
+- `kubectl expose deployment <name> --type=<TIPO> --port<PORT>`
+
+- Tem diversos tipos, mais o `LoadBalancer` é o mais comum.
+
+- E uma porta para o servico a ser consumido.
+
+- Para ver os servicos disponíveis: `kubectl get services`
+
+- Obter informacoes: `kubectl describe services/<name>`
+
+## Gerando IP de acesso
+
+- Para acessar nosso servico: `minikube service <name>`
+
+- Dessa forma, o IP aparece no nosso terminal.
+
+- E assim, o projeto está rodando pelo Kubernetes.
