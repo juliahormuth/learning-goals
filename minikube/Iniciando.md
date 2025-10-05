@@ -17,3 +17,13 @@
 - Comando: `minikube dashboard`
 
 - Para obter apenas a URL: `minikube dashboard --url`
+
+## Deployment
+
+- Após criar o container com o projeto, é necessário rodar o projeto no Kubernetes
+
+- Para isso vamos precisamos criar um `Deployment`, que é onde rodamos os containers das aplicacoes nos `Pods`.
+
+- Comando: `kubectl create deployment <name> --image=<IMAGE>`
+
+- Assim, o projeto é orquestrado pelo Kubernetes.
