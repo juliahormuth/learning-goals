@@ -1,6 +1,6 @@
 # Minikube
 
-- Inicializar (criar): `minikube start --driver=<DRIVER>`. Ex: `minikube start --driver=Docker`
+- Inicializar (criar): `minikube start --driver=<DRIVER>`. Ex: `minikube start --driver=docker`
 
 - Virtualbox, hyperv e docker
 
@@ -8,7 +8,9 @@
 
 - Parar o minikube: `minikube stop`
 
-- Iniciar novamente: `minikube start --driver=Docker`
+- Iniciar novamente: `minikube start --driver=docker`
+
+- Se quiser excluir o cluster: `minikube delete`
 
 ## Dashboard
 
