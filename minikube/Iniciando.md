@@ -35,3 +35,19 @@
 - Para checar se tudo está correto, use: `kubectl get deployments` e ai nao precisa ver pelo dashboard.
 
 - Mais detalhes: `kubectl describe deployments`
+
+## Pods
+
+- Pods sao onde os containers sao executados
+
+- Para verificar usamos: `kubectl get pods`
+
+- Mais detalhes: `kubectl describe pods`
+
+## Configuracao
+
+- `kubectl config view`
+
+## Service
+
+- É quem possibilita expor os Pods para o mundo externo. É uma entidade separada dos pods, que os expoem para uma rede.
