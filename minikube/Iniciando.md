@@ -22,10 +22,16 @@
 
 ## Deployment
 
-- Após criar o container com o projeto, é necessário rodar o projeto no Kubernetes
+- Após criar o container com o projeto e enviar ao Docker Hub, é necessário rodar o projeto no Kubernetes
 
-- Para isso vamos precisamos criar um `Deployment`, que é onde rodamos os containers das aplicacoes nos `Pods`.
+- Para isso vamos precisamos criar um `Deployment`, que é onde rodamos os containers das aplicacoes nos `Pods`
 
 - Comando: `kubectl create deployment <name> --image=<IMAGE>`
 
-- Assim, o projeto é orquestrado pelo Kubernetes.
+- Assim, o projeto é orquestrado pelo Kubernetes
+
+- Se o Deployment falhar, tente: `kubectl delete deployment <name>` e tente criar novamente
+
+- Para checar se tudo está correto, use: `kubectl get deployments` e ai nao precisa ver pelo dashboard.
+
+- Mais detalhes: `kubectl describe deployments`
