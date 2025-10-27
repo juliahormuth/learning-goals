@@ -12,9 +12,10 @@ These are my learning goals before I get married :)
 - Jenkins
 - Clean Architecture
 
-## Postgraduate
+## [Postgraduate](https://github.com/juliahormuth/postgraduate-software-engineering)
 
-- Backend Architecture
+1. Backend Architecture (MVC, MVVM, DDD, Clean Architecture, Microsservices)
+2. Devops (Github Actions, Docker, Kubernetes)
 
 ## Frontend
 
