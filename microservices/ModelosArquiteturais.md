@@ -20,3 +20,8 @@
 - Microsservices de configuracoes (Service registry, Config Server, API Gategay e etc)
 - Microsservices de agentes (FraudeDetection Agent, Recomendation Agent e etc )
 
+# Microsservices de configuracao
+
+## Padrao API Gateway
+- API Gateway é um microsservices de configuracao sem regras de negócio mas com responsabilidades específicas, sendo uma porta de entrada da arquitetura, centralizando todas as entradas (Requests para diferentes microsservicos que vem do front-end, por exemplo), que internamente recebe as requisicoes e direciona para os respectivos microsservices para que cada um responda com seus respectivos processamentos, elevando o grau de maturidade na arquitetura.
+- Além de roteamento, ele pode fazer o balanceamento de cargas quando tiverem múltiplas instanceas atividades de determinados microsservicos, autenticacao e etc.
