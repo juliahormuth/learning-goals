@@ -53,3 +53,6 @@
 - Melhor controle, gerar alerta e etc.
 - Essa base esta conectada com todos os servicos da arquitetura pois se trata de uma preocupacao transversal.
 - Pode ser implementado com Logback (padrao Spring) ou Log4j2, podendo enviar pro ElasticSearch.
+
+## Padrao Metrics
+- Para verificar o status, infos, métricas específicas, request mappings mapeadoss e etc podemos utilizar o Spring Actuator, disponibilizando diversas ferramentas para observarmos essas informacoes.
