@@ -39,3 +39,7 @@
 - Instancias podem ser registradasem um servidor Eureka: Eureka server.
 - Os Eureka Clients podem descobrir essas instancias quando necessário.
 - Dashboard Eureka para controle e visualizacao dos servicos registrados.
+
+## Padrao Global Config
+- Servico para centralizar os diferentes arquivos de configuracao dos diferentes microservices do sistema. Tendo em vista que, além do número grande de microsservices, todos podem ter diferentes arquivos de configuracao tanto para ambiente de desenvolvimento, quanto de producao e etc. Ficando inviável cuidar deles em cada projeto separadamente. Além disso, ajuda na alta disponibilidade, já que nele podemos trocar configuracoes sem parar os microsservicos das regras de negócio.
+- Pode ser implementado com Spring Boot + Spring Cloud Config.
