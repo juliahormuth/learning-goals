@@ -34,3 +34,8 @@
 - Spring Cloud Discovery/Netflix em conjunto com Spring Boot e Spring Cloud LoadBalancer (adicionando mais o padrao de Balanceamento de carga) é bom para isso.
 
 - **Preocupacoes transversais**: Preocupacoes que se desdobram pela arquitetura como um todo.
+
+## Spring Cloud Discovery
+- Instancias podem ser registradasem um servidor Eureka: Eureka server.
+- Os Eureka Clients podem descobrir essas instancias quando necessário.
+- Dashboard Eureka para controle e visualizacao dos servicos registrados.
