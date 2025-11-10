@@ -20,7 +20,7 @@
 - Microsservices de configuracoes (Service registry, Config Server, API Gategay e etc)
 - Microsservices de agentes (FraudeDetection Agent, Recomendation Agent e etc )
 
-# Microsservices de configuracao
+# Padroes configuracao em Microsservices
 
 ## Padrao API Gateway
 - API Gateway é um microsservices de configuracao sem regras de negócio mas com responsabilidades específicas, sendo uma porta de entrada da arquitetura, centralizando todas as entradas (Requests para diferentes microsservicos que vem do front-end, por exemplo), que internamente recebe as requisicoes e direciona para os respectivos microsservices para que cada um responda com seus respectivos processamentos, elevando o grau de maturidade na arquitetura.
@@ -56,3 +56,16 @@
 
 ## Padrao Metrics
 - Para verificar o status, infos, métricas específicas, request mappings mapeadoss e etc podemos utilizar o Spring Actuator, disponibilizando diversas ferramentas para observarmos essas informacoes.
+
+## Padrao Distributed Tracing
+- Como temos diversos microsservicos, cada qual com sua própria base de dados, dados distribuídos pela arquitetura, tendo que lidar com sincronia, replicacao de dados e etc.
+Ex: O servico de User Service tem que se comunicar com o Payment Service, para analisar o que está acontecendo e quais servicos foram acionados implementamos o Distributed Tracing Pattern, para saber quem fez parte da acao.
+- Podemos usar de identificadores únicos para categorizar estas operacoes de forma individual e estes IDS também podem ser armazenados em uma base específica para isso. Fazendo também parte de uma preocupacao transversal.
+- Pode ser implementado com o Spring Observability.
+- Spring Observability: Baseado em Micrometer e Micrometer Tracing, é o antigo Spring Cloud Sleuth e tem integracao com o Spring Actuator. É compatível com o Zipkin para a visualizacao de todos estes rastradores.
+
+## Padroes de resiliencia em Microsservicos
+
+# Padrao Circuit Breaker
+- É possível que User Service e Payment Service se comuniquem de forma síncrona, por exemplo. Caso um deles fique fora do ar, nao é possível realizar a acao e isso também pode gerar mais erros posteriores que vem de novas requisicoes do backend, gerando falhas em cascata. Por isso é importante detectarmos esses pontos de falha e probabilidades de falhas. Nesse caso o Circuit Breaker vai realmente agir como um "disjuntor" para que traga fluxos alternativos quando um determinado microsservice está fora do ar, previndo falhas destes microsservices e até mesmo do restante da arquitetura.
+- Pode ser implementado com Spring Circuit Breaker + Resilience4j e Spring Retry.
