@@ -43,3 +43,13 @@
 ## Padrao Global Config
 - Servico para centralizar os diferentes arquivos de configuracao dos diferentes microservices do sistema. Tendo em vista que, além do número grande de microsservices, todos podem ter diferentes arquivos de configuracao tanto para ambiente de desenvolvimento, quanto de producao e etc. Ficando inviável cuidar deles em cada projeto separadamente. Além disso, ajuda na alta disponibilidade, já que nele podemos trocar configuracoes sem parar os microsservicos das regras de negócio.
 - Pode ser implementado com Spring Boot + Spring Cloud Config.
+
+## Padrao de Observabilidade
+- Monitoramente e controle.
+
+## Padrao Log Aggregation
+- Cada microsservico gera seus próprios logs em seus próprios arquivos a cada execucao.
+- Por isso é necessário uma única base para salvar/agregar os logs que sao gerados.
+- Melhor controle, gerar alerta e etc.
+- Essa base esta conectada com todos os servicos da arquitetura pois se trata de uma preocupacao transversal.
+- Pode ser implementado com Logback (padrao Spring) ou Log4j2, podendo enviar pro ElasticSearch.
