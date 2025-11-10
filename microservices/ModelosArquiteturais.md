@@ -69,3 +69,15 @@ Ex: O servico de User Service tem que se comunicar com o Payment Service, para a
 # Padrao Circuit Breaker
 - É possível que User Service e Payment Service se comuniquem de forma síncrona, por exemplo. Caso um deles fique fora do ar, nao é possível realizar a acao e isso também pode gerar mais erros posteriores que vem de novas requisicoes do backend, gerando falhas em cascata. Por isso é importante detectarmos esses pontos de falha e probabilidades de falhas. Nesse caso o Circuit Breaker vai realmente agir como um "disjuntor" para que traga fluxos alternativos quando um determinado microsservice está fora do ar, previndo falhas destes microsservices e até mesmo do restante da arquitetura.
 - Pode ser implementado com Spring Circuit Breaker + Resilience4j e Spring Retry.
+
+## Padroes de Autenticacao e Autorizacao em Microsservicos
+
+# Padrao de Autenticacao e Autorizacao no Gateway
+- Uma opcao é atribuir essa responsabilidade ao API Gateway, onde um determinado cliente vai enviar uma requisicao com um determinado token para acessar por exemplo a listagem de cursos e assim, o API Gateway faz a verificacao de autenticacao e se tudo estiver correto, ele faz o roteamento para determinado microsservico (No Exemplo: Course Service) para responder a essa request.
+Neste caso, é importante que os demais microsservicos estejam em uma private network, para que somente o API Gateway esteja nesta rede pública na qual o cliente possa acessar e realizar a autenticacao.
+
+# Padrao Access Token para Autenticacao e Autorizacao (Autenticacao e Autorizacao Distribuída)
+- O cliente envia uma solicitacao de login para o gateway, mas agora o Gateway nao é mais responsável pela autenticacao e sim o Microsservice User (Antes User Service, mas agora Auth User Service), por exemplo. Feito isso, o User Service vai retornar ao API Gateway, consequentemente ao cliente, um determinado token.
+Quando ja autenticado, o cliente envia uma segunca requisicao passando o token para visualizar a listagem de cursos (no micrsservice Course Service). Esse Course Service tem uma barreira de autenticacao, onde ele e todos os outros microsservices precisam checar se este token é válido, mas apenas o User Service é quem o gera. Se o token for válido, ai sim o Course Service vai responder a essa request.
+Quando este tipo de padrao é implementado, já nao há a necessidade de todos os microsservices estarem em uma rede privada, podendo estar na rede pública, já que todos terao essa barreira de autenticacao (Nao apenas nos microsservicos de regras de negócio, mas também no Service Registry, Config Server e etc).
+- Pode ser implementado com Spring Security, permitindo autenticacao e autorizacao. Tanto para coisas mais simples como Basic Auth, como com mais avancadas como OAuth2, jwt, Single Sing-On(SSO)  e etc.
