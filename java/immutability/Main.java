@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         MutableOrder mutableOrder = new MutableOrder("Confirmado");
@@ -18,5 +22,25 @@ public class Main {
                                                                                                  // alteracoes
             System.out.println("Objeto imutável em nova Thread:" + immutableOrder.getStatus());
         }).start();
+
+        // List
+        List<String> immutableList = Collections.unmodifiableList(new ArrayList<String>());
+
+        System.out.println("Immutable List: " + immutableList.toString());
+
+        // immutableList.add("Julia"); isso dá erro
+
+        System.out.println("Immutable List: " + immutableList.toString());
+
+        // Propriedade imutável de Array
+
+        List<String> products = new ArrayList<>();
+        products.add("Mesa");
+        products.add("Cadeira");
+
+        ImmutableOrder immutableOrderWithList = new ImmutableOrder(products);
+
+        System.out.println(immutableOrderWithList.getProducts().toString());
+
     }
 }
