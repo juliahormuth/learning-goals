@@ -4,6 +4,17 @@ These are my learning goals before I get married :)
 
 ## Backend
 
+- Fundamentals
+- Programming logic
+- Algorithm and data structure
+- Programming paradigms
+- Object-oriented programming
+- SQL (CRUD, Relationship, ACID, Transactions)
+- Git
+- Web fundamentals 
+- Security 
+- API e Integrations
+
 - [SOLID](solid)
 - Design Patterns
 - [Docker](docker/Index.md)
