@@ -4,7 +4,7 @@ These are my learning goals before I get married :)
 
 ## Backend
 
-- Fundamentals
+- [Fundamentals](fundamentals/redme.md)
 - Programming logic
 - Algorithm and data structure
 - Programming paradigms
