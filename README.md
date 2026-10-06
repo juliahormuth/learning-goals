@@ -9,7 +9,7 @@ These are my learning goals before I get married :)
 <details>
 <summary>1. Fundamentals</summary>
 
-- [ ] [**Fundamentals**](fundamentals/redme.md)
+- [ ] [**Fundamentals**](fundamentals)
   - [ ] [Binary](fundamentals/binary.md)
   - [ ] [How the computer works](fundamentals/how-computer-works.md)
   - [ ] [Compiled vs interpreted languages](fundamentals/languages.md)
@@ -49,15 +49,15 @@ These are my learning goals before I get married :)
 <details>
 <summary>4. Architecture & Design</summary>
 
-- [ ] [**SOLID**](solid)
-  - [ ] [Single Responsibility Principle](solid/srp/SingleResponsabilityPrinciple.md)
+- [ ] [**SOLID**](architecture/solid)
+  - [ ] [Single Responsibility Principle](architecture/solid/single-responsibility-principle.md)
   - [ ] Open/Closed Principle
   - [ ] Liskov Substitution Principle
   - [ ] Interface Segregation Principle
   - [ ] Dependency Inversion Principle
 - [ ] Design Patterns
 - [ ] Clean Architecture
-- [ ] [Microservices](microservices/ModelosArquiteturais.md)
+- [ ] [Microservices](architecture/microservices/architectural-models.md)
 - [ ] API and integrations
 
 </details>
@@ -66,24 +66,24 @@ These are my learning goals before I get married :)
 <summary>5. Security</summary>
 
 - [ ] Security fundamentals
-- [ ] [Session vs JWT](authentication/Session-vs-Jwt.md)
+- [ ] [Session vs JWT](security/authentication/session-vs-jwt.md)
 
 </details>
 
 <details>
 <summary>6. DevOps & Containers</summary>
 
-- [ ] [**Docker**](docker/Index.md)
-  - [ ] [Image](docker/image/Image.md)
-  - [ ] [Dockerfile instructions](docker/dockerfile/Instructions.md)
-  - [ ] [Volumes](docker/Volume.md)
-  - [ ] [Networks](docker/networks/Network.md)
-  - [ ] [Docker Compose](docker/docker-compose/DockerCompose.md)
-- [ ] [Docker Swarm](docker-swarm/Orquestracao.md)
-- [ ] [YML](yml/test.yml)
-- [ ] [**Kubernetes**](kubernetes/Conceito.md)
-  - [ ] [Deployment](kubernetes/Deployment.md)
-  - [ ] [Minikube](minikube/Iniciando.md)
+- [ ] [**Docker**](devops/docker)
+  - [ ] [Image](devops/docker/image.md)
+  - [ ] [Dockerfile instructions](devops/docker/dockerfile.md)
+  - [ ] [Volumes](devops/docker/volume.md)
+  - [ ] [Networks](devops/docker/network.md)
+  - [ ] [Docker Compose](devops/docker/docker-compose)
+- [ ] [Docker Swarm](devops/docker/swarm.md)
+- [ ] [YAML](devops/yaml/test.yml)
+- [ ] [**Kubernetes**](devops/kubernetes)
+  - [ ] [Deployment](devops/kubernetes/deployment.md)
+  - [ ] [Minikube](devops/kubernetes/minikube.md)
 - [ ] Jenkins
 
 </details>
@@ -150,7 +150,7 @@ Tópicos pendentes do [Guia de Estudos](https://github.com/juliahormuth/Ads-Plat
 <summary>9. Frontend</summary>
 
 - [ ] Deixa a vida me levar
-- [ ] [JavaScript review](react/js-review/review.js)
+- [ ] [JavaScript review](frontend/javascript/review.js)
 
 </details>
 
