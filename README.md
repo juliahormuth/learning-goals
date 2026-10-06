@@ -2,7 +2,7 @@
 
 These are my learning goals before I get married :)
 
-> Marque `[x]` quando concluir um tópico. Tópicos com link já têm anotações neste repositório.
+> Mark `[x]` when you finish a topic. Linked topics already have notes in this repository.
 
 ## Domains and Topics
 
